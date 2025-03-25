@@ -1,3 +1,10 @@
+let userConfig = undefined
+try {
+  userConfig = await import('')
+} catch (e) {
+  // ignore error
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
